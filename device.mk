@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+# Overlays
+PRODUCT_PACKAGES += \
+    SystemUIOverlay
+
 # Display
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display_id_4630946883826275713.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946883826275713.xml
